@@ -1,0 +1,198 @@
+// Normally mainpage styles
+html
+	overflow: scroll
+	
+body
+	background: #fafafa 
+	
+.out
+	margin: 0 auto
+	padding-bottom: 10px
+	width: 970px
+	
+header
+	position: relative
+	border: 10px solid #fff
+	width: 951px
+	height: 207px
+	background: #f8f8f8
+
+.logo 
+	position: relative
+	i
+		position: absolute
+		top: 18px
+		left: 10px
+		+s(logo)
+		display: block
+	span
+		position: absolute
+		padding-left: 10px
+		top: 100px
+		display: block
+		font: 11px Tahoma 
+
+.logo-partner
+	position: relative
+	float: left
+	top: 12px
+	left: 50%
+	margin-left: -76px 
+	width: 275px
+	strong
+		padding-bottom: 12px
+		display: block
+		font: normal 11px tahoma
+	
+.logo-partner__image
+	height: 45px 
+	bottom:  7px
+	a
+		position: absolute
+		+s(logo-partner)
+
+.logo-partner__link
+	position: absolute
+	margin-top: 7px
+	a
+		color: #008AE2
+
+.right__block
+	position: relative
+	margin-top: 19px
+	float: right
+
+.right__menu
+	position: relative
+	margin-bottom: 12px 
+	font-family: tahoma
+	font-size: 11px  
+	list-style: none
+	height: 20px
+	li
+		float: right
+		padding: 0 9px 0 9px
+		border-right: 1px solid #d4d5d7
+		display: block
+		a
+			color: #008AE2
+			line-height: 20px 
+			
+	li:first-child
+		border-right: none
+.search__rss
+	position: relative
+	padding-left: 20px
+	&:before
+		position: absolute
+		top: 50%
+		margin-top: -5px
+		left: 0
+		content: ""
+		+s(rss)
+
+.search__archive
+	margin: 12px 1px 0 0
+	height: 20px
+	display: block
+	list-style: none
+	li	
+		float: right
+		border-right: 1px solid #d4d5d7
+		a
+			line-height: 20px 
+			padding: 0 9px 0 9px
+			color: #008AE2
+	li:first-child
+		border-right: none
+		
+.search__input
+	input
+		width: 197px
+		height: 27px
+		margin-right: 5px
+		padding-left: 10px
+		font: 12px tahoma 
+		background: url(../img/icons/inp.png)
+		background-size: 100%
+	
+	a
+		
+		float: right
+		margin-right: 9px
+		padding-top: 5px
+		width: 53px
+		height: 27px
+		font-family: tahoma
+		text-align: center
+		font-size: 11px
+		text-decoration: none 
+		color: #FFF
+		display: block
+		+s(search)
+
+.menu
+	position: relative
+	margin-top: 14px
+	float: left
+	width: 950px
+	height: 42px
+	background: #000
+	border-bottom: 4px solid #c8281e
+	
+.menu__layout
+	list-style: none
+	width: 100%
+	background: #000
+	
+.menu__item
+	display: block
+	float: left
+	a
+		display: block
+		line-height: 42px
+		padding: 0 7px
+		color: #fff 
+		font-family: 12px Tahoma, Geneva, sans-serif 
+		text-decoration: none
+	&:hover a
+		display: block
+		line-height: 42px
+		background: #9b1f17 
+		background: linear-gradient(to top, #c8281e, #9b1f17)
+		font-family: 12px Tahoma, Geneva, sans-serif 
+		text-decoration: none
+
+.menu__item_right
+	position: absolute
+	right: 0
+
+.menu-next
+	float: left
+	height: 38px
+	ul
+		list-style: none
+		li
+			display: inline-block
+
+.page
+	position: relative
+	border: 1px solid #000
+	width: 951px
+	overflow: auto
+
+.content
+	float: left
+	border: 1px solid #000
+	height: 600px
+	width: 620px
+	background: #fff 
+	
+.leftbar
+	float: left
+	margin-left: 5px 
+	border: 1px solid #000 
+	height: 600px
+	width: 322px
+	background: #fff 
+
