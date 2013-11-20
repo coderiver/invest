@@ -3,19 +3,31 @@ html
 	overflow: scroll
 	
 body
-	background: #fafafa 
+	position: relative
+	background: #e8e9e9
+	background: linear-gradient(#e8e9e9, #fff, #e8e9e9)
+	&:before
+		content: ""
+		position: absolute
+		top: 155px
+		left: 0
+		right: 0
+		height: 42px
+		background: #B7B7B7 
 	
 .out
 	margin: 0 auto
 	padding-bottom: 10px
 	width: 970px
 	
-header
+.header
 	position: relative
+	margin-top: 11px
 	border: 10px solid #fff
-	width: 951px
-	height: 207px
-	background: #f8f8f8
+	width: 980px
+	height: 193px
+	background: #e8e9e9
+	+g(#e8e9e9, #fff)
 
 .logo 
 	position: relative
@@ -33,12 +45,15 @@ header
 		font: 11px Tahoma 
 
 .logo-partner
-	position: relative
+	position: absolute
 	float: left
-	top: 12px
 	left: 50%
-	margin-left: -76px 
-	width: 275px
+	margin-left: -106px 
+	padding: 9px 0 10px 28px
+	width: 240px
+	height: 109px
+	border-left: 1px solid #FFFFFF
+	border-right: 1px solid #FFFFFF
 	strong
 		padding-bottom: 12px
 		display: block
@@ -56,6 +71,8 @@ header
 	margin-top: 7px
 	a
 		color: #008AE2
+		&:hover
+			text-decoration: none
 
 .right__block
 	position: relative
@@ -64,7 +81,7 @@ header
 
 .right__menu
 	position: relative
-	margin-bottom: 12px 
+	margin-bottom: 15px 
 	font-family: tahoma
 	font-size: 11px  
 	list-style: none
@@ -77,6 +94,8 @@ header
 		a
 			color: #008AE2
 			line-height: 20px 
+			&:hover
+				text-decoration: none
 			
 	li:first-child
 		border-right: none
@@ -92,17 +111,20 @@ header
 		+s(rss)
 
 .search__archive
-	margin: 12px 1px 0 0
+	margin: 15px 1px 15px 0
 	height: 20px
 	display: block
 	list-style: none
 	li	
 		float: right
 		border-right: 1px solid #d4d5d7
+		padding: 0 9px 0 9px
 		a
 			line-height: 20px 
-			padding: 0 9px 0 9px
 			color: #008AE2
+			&:hover
+				text-decoration: none
+			
 	li:first-child
 		border-right: none
 		
@@ -110,16 +132,15 @@ header
 	input
 		width: 197px
 		height: 27px
-		margin-right: 5px
-		padding-left: 10px
+		margin: 5px
+		padding: 0 10px 0 10px
 		font: 12px tahoma 
 		background: url(../img/icons/inp.png)
 		background-size: 100%
 	
 	a
-		
 		float: right
-		margin-right: 9px
+		margin: 5px 9px 0
 		padding-top: 5px
 		width: 53px
 		height: 27px
@@ -133,9 +154,8 @@ header
 
 .menu
 	position: relative
-	margin-top: 14px
 	float: left
-	width: 950px
+	width: 100%
 	height: 42px
 	background: #000
 	border-bottom: 4px solid #c8281e
@@ -146,53 +166,598 @@ header
 	background: #000
 	
 .menu__item
-	display: block
 	float: left
-	a
-		display: block
-		line-height: 42px
+	.menu__item_a
+		position: relative
 		padding: 0 7px
+		line-height: 42px
 		color: #fff 
 		font-family: 12px Tahoma, Geneva, sans-serif 
 		text-decoration: none
-	&:hover a
 		display: block
+		&:before
+			content: ""
+			position: absolute
+			top: 6px
+			width: 1px
+			right: 0
+			height: 32px
+			background: #333333 
+	&:hover 
+		.menu__item_a
+			display: block
+			line-height: 42px
+			background: #9b1f17 
+			+g(#9b1f17, #c8281e)
+			font-family: 12px Tahoma, Geneva, sans-serif 
+			text-decoration: none
+			&:before
+				display: none
+		.menu-next
+			display: block
+			
+.menu__item_right
+	float: right
+	.menu__item_a
+		position: relative
+		padding: 0 7px
 		line-height: 42px
-		background: #9b1f17 
-		background: linear-gradient(to top, #c8281e, #9b1f17)
+		color: #fff 
 		font-family: 12px Tahoma, Geneva, sans-serif 
 		text-decoration: none
-
-.menu__item_right
-	position: absolute
-	right: 0
+		display: block
+		&:before
+			content: ""
+			position: absolute
+			top: 6px
+			width: 1px
+			left: 0
+			height: 32px
+			background: #333333 
+	&:hover 
+		.menu__item_a
+			display: block
+			line-height: 42px
+			background: #9b1f17 
+			+g(#c8281e, #9b1f17)
+			font-family: 12px Tahoma, Geneva, sans-serif 
+			text-decoration: none
+			&:before
+				display: none
 
 .menu-next
-	float: left
+	position: absolute
+	top: 100%
+	left: 0
+	margin-top: 5px
 	height: 38px
+	width: 100%
+	display: none
+	+g(#fff, #e8e9e9)
+	list-style: none
+	
+	li
+		float: left
+		+g(#fff, #e8e9e9)
+		
+	.menu-next__link
+		position: relative
+		padding: 0 7px
+		line-height: 38px
+		color: #c8281e
+		font-family: 12px Tahoma, Geneva, sans-serif 
+		text-decoration: none
+		display: block
+		&:before
+			content: ""
+			position: absolute
+			top: 6px
+			width: 1px
+			left: 0
+			height: 32px
+			background: #fff
+
+.wrapper
+	margin-top: 15px
+	width: 1000px
+	overflow: auto
+
+.layout__col_left
+	float: left
+	padding: 0 11px 0 10px
+	width: 644px
+	min-height: 2864px
+	background: #fff
+	
+.col_left__wrapper
+	overflow: hidden 
+	width: 100%
+
+
+.article__title
+	padding-top: 18px
+	font: bold 30px Tahoma, Geneva, sans-serif
+	
+.article__summary-info
+	padding-bottom: 23px
+	font: normal 18px Tahoma, Geneva, sans-serif
+	
+.article__pubinfo
+	margin-bottom: 25px
+	height: 75px
+	font: normal 12px Tahoma, Geneva, sans-serif
+	a
+		color: #c8281e
+		text-decoration: none
+		font: normal 12px Tahoma, Geneva, sans-serif
+	
+.article__pubinfo_author
+	margin-left: 11px 
+	border-top: 1px solid #b7b7b7
+	overflow: hidden
+	p
+		padding-top: 8px
+		font: normal 12px Tahoma, Geneva, sans-serif
+	
+.article__pubinfo_authorpic
+	float: left
+	padding: 0 10px 25px 0
+	
+.pubinfo__date
+	color: #999 
+	
+.tablets
+	width: 240px
+	float: right
+	margin-left: 20px
+
+.tablets__name
+	border-bottom: 7px solid #000
+	margin-bottom: 20px
+	padding-bottom: 7px
+	img
+		margin-bottom: 9px
+		width: 240px
+		height: 162px
+		
+	table
+		border-collapse: collapse
+		th
+			text-align: left
+			border-top: 1px solid  #d5d5d5
+			padding: 6px 0 6px 0
+			font: bold 11px Tahoma, Geneva, sans-serif
+		td
+			border-top: 1px solid  #d5d5d5
+			padding: 6px 0 6px 0
+			font: normal 11px Tahoma, Geneva, sans-serif
+			a
+				color: #3fa7e9
+				border-bottom: 1px solid  #3fa7e9
+				padding-bottom: 1px
+		th, td
+			&.tablets__name-border
+				border-top: none
+
+.article__text
+	p
+		padding-bottom: 25px
+		font: normal 13px Tahoma, Geneva, sans-serif
+		a
+			color: #3fa7e9
+			border-bottom: 1px solid  #3fa7e9
+	h3
+		padding-right: 7px
+		font: bold 18px Tahoma, Geneva, sans-serif
+		color: #C8281E 
+		display: inline
+	h3+p
+		display: inline
+		
+.article__addition
+	margin: 25px 0 25px 0 
+	border: 1px solid #d5d5d5
+	height: 282px
+	
+	
+.addition__advertising
+	float: left
+	border-right: 1px solid #d5d5d5
+	height: 100%
+	background: #F5F5F5 
+	img
+		padding: 10px 10px 0 0 
+		width: 320px
+		height: 240px
+	a
+		padding-left: 10px
+		display: block
+		color: #A7A7A7 
+		&:hover
+			text-decoration: none
+
+.addition__related-articles
+	float: right
+	width: 301px
+	
+.blocks-title
+	font: bold 18px Tahoma, Geneva, sans-serif
+	padding: 10px
+	
+.related-articles__item
+	padding: 5px 10px 5px 10px
+	border-top: 1px solid #d5d5d5
+	a
+		
+		display: block
+		font: normal 12px Tahoma, Geneva, sans-serif
+		text-decoration: none
+		color: #3fa7e9
+		&:hover
+			text-decoration: underline
+	time
+		font: normal 11px Tahoma, Geneva, sans-serif
+		color: #A9A9A9 
+		
+.article__tools
+	position: relative
+	width: 623px
+	height: 38px
+	border: 1px solid #d5d5d5
+	+g(#fff, #f5f5f5)
+	
+.tools__share	
 	ul
 		list-style: none
 		li
+			float: left
 			display: inline-block
+			position: relative
+			height: 38px
+			&:before
+				content: ""
+				position: absolute
+				width: 1px
+				bottom: 0
+				right: 0
+				top: 0
+				+g(#fff, #d5d5d5)
+		a
+			float: left
+			margin: 12px 15px 0 15px 
+			font: normal 11px Tahoma, Geneva, sans-serif 
+			color: #a8a8a8
+			display: block
+			&:hover
+				text-decoration: none
+				
+		.tools__share_facebook
+			margin: 12px 15px 0 0
+			display: inline-block
+			+s(facebook)
 
-.page
-	position: relative
-	border: 1px solid #000
-	width: 951px
-	overflow: auto
+		.tools__share_twitter
+			margin: 11px 15px 0 0
+			display: inline-block
+			+s(twitter)
 
-.content
-	float: left
-	border: 1px solid #000
-	height: 600px
-	width: 620px
-	background: #fff 
+.tools__pages
+	float: right
+	line-height: 38px
 	
-.leftbar
+.pages__title
+	padding-right: 10px
+	font-size: 11px
+	color: #a8a8a8
+	
+.pages__controls
+	float: right
+	line-height: 38px
+	
+.pages__number
 	float: left
-	margin-left: 5px 
-	border: 1px solid #000 
-	height: 600px
-	width: 322px
-	background: #fff 
+	padding: 0 10px 0 10px
+	display: inline-block
+	font-size: 11px 
+	
+.controls__prev_current
+	float: left
+	margin-top: 8px
+	width: 22px
+	height: 22px
+	display: inline-block
+	+s(controls__prev_current)
 
+.controls__next
+	margin: 8px 8px 0 0
+	width: 22px
+	height: 22px
+	display: inline-block
+	+s(controls__next)
+
+.article__tags
+	padding: 17px 0 18px 0
+	border-bottom: 5px solid #000
+	font: normal 12px Tahoma, Geneva, sans-serif 
+	ul
+		li
+			display: inline
+			a
+				padding: 0 5px 0 5px 
+				color: #008AE2 
+				text-decoration: none
+				&:hover
+					text-decoration: underline
+	.tags__title
+		float: left
+		color: #999
+
+.article__comments
+	margin: 25px 0 20px 0
+	border-bottom: 5px solid #000
+	
+.article__comments_blocks-title
+	padding: 0 0 22px 0
+	font: bold 18px Tahoma, Geneva, sans-serif   
+
+.comments__users
+	padding-bottom: 25px
+	
+.comment__author
+	a
+		float: left
+		padding-right: 15px
+		color: #008AE2 
+		font: normal 12px Tahoma, Geneva, sans-serif  
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+		
+.comment__author-meta
+	padding-bottom: 11px
+	
+		
+.users__text
+	font: normal 12px Tahoma, Geneva, sans-serif 
+
+.comments__users-view
+	padding: 15px 0 15px 0 
+	border-top: 1px solid #b7b7b7
+	i
+		float: left
+		margin-top: 4px
+		padding-left: 5px
+		display: block
+		+s(com-pic)
+	a
+		text-decoration: none
+		color: #C8281E 
+		font: normal 12px Tahoma, Geneva, sans-serif 
+		&:hover
+			text-decoration: underline
+
+.companies-dossier
+	border: 1px solid #D5D5D5 
+	a
+		text-decoration: none
+	
+.blocks-title
+	padding: 10px 0 10px 10px 
+	font: bold 18px Tahoma, Geneva, sans-serif
+	color: #000 
+	i
+		float: right
+		margin-right: 10px
+		display: blocks
+		+s(unroll-ico)
+
+.day-topics__list
+	li
+		padding-bottom: 13px 
+		a
+			color: #008AE2 
+			text-decoration: none
+			list-style: none
+			&:hover
+				text-decoration: underline
+		i
+			float: left
+			margin: 6px 7px 0 0  
+			display: block
+			+s(link-pic)
+	.day-topics__private
+		i
+			float: left
+			margin: 1px 7px 0 0 
+			display: block
+			+s(private-link)
+
+	.comment__link
+		display: inline-block
+		color: #000
+		i
+			margin: 4px 7px 0 8px
+			+s(com-pic)
+
+.layout__col_right
+	float: right
+	width: 320px
+	min-height: 2864px
+	background: #FFF 
+
+.layout__col_right__interest
+	margin: 10px 40px 20px 40px
+	a
+		color: #999 
+		font: normal 11px Tahoma, Geneva, sans-serif
+		&:hover
+			text-decoration: none
+  
+.theme-topics
+	border: 1px solid #d5d5d5
+	margin: 0 10px 19px 10px
+	.blocks-title
+		display: inline-block
+	
+.navi-btn
+	float: right
+
+.navi-btn__controls__end
+	margin: 8px 0 8px 0 
+	display: inline-block
+	+s(controls__end)
+
+.navi-btn__controls__next
+	margin: 8px 8px 8px 0 
+	display: inline-block
+	+s(controls__next)
+
+.right__senting
+	position: relative
+	border-top: 1px solid  #d5d5d5
+	a
+		color: #008AE2 
+		font: normal 12px Tahoma, Geneva, sans-serif  
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+		img
+			margin: 10px 15px 10px 10px 
+			width: 107px
+			height: 71px
+	.comment__link
+		color: #000
+		i
+			display: inline-block
+			margin: 4px 7px 0 0
+			+s(com-pic)
+
+.right__senting__view_red
+	position: relative
+	height: 30px
+	border-top: 1px solid #d5d5d5
+	+g(#961e16, #c8281e)
+	a
+		position: absolute
+		top: 8px
+		left: 30px 
+		font: normal 12px Tahoma, Geneva, sans-serif 
+		color: #FFF 
+		text-decoration: none
+		&:hover
+			text-decoration: underline 
+		i
+			position: absolute
+			left: -19px
+			top: 2px
+			display: inline-block
+			+s(plus)
+
+.right__senting__view_white
+	position: relative
+	height: 30px
+	border-top: 1px solid #d5d5d5
+	a
+		position: absolute
+		top: 8px
+		left: 30px 
+		color: #c8281e
+		text-decoration: none
+		&:hover
+			text-decoration: underline 
+		i
+			position: absolute
+			left: -19px
+			top: 2px
+			display: inline-block
+			+s(plus-red)
+
+.right__senting_links
+	position: absolute
+	top: 8px
+	display: inline-block
+	
+.popular-materials
+	margin: 0 10px 19px 10px
+	border: 1px solid #d5d5d5
+.popular-materials__menu
+	border-top: 1px solid #d5d5d5
+	ul
+		background: #F5F5F5 
+		border-bottom: 1px solid #d5d5d5
+		li
+			line-height: 27px
+			display: inline-block 
+			a
+				padding: 9px 14px 9px 14px 
+				color: #000
+				text-decoration: none
+				line-height: 27px
+				font: normal 11px Tahoma, Geneva, sans-serif 
+				&:hover
+					text-decoration: underline
+		.active
+			background: #FFF 
+			border-right: 1px solid #d5d5d5
+			-webkit-box-shadow: 0 1px #FFF 
+			box-shadow: 0 1px #FFF 
+
+.popular-materials__link_top
+	margin: 14px 10px 9px 10px
+	a
+		color: #008ae2 
+		font: normal 12px Tahoma, Geneva, sans-serif  
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+			
+.popular-materials__link
+	border-top: 1px solid #d5d5d5
+	padding: 10px 10px 9px 10px
+	a
+		color: #008ae2 
+		font: normal 12px Tahoma, Geneva, sans-serif  
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+			
+.delo-ua
+	margin: 0 10px 19px 10px
+	border: 1px solid #d5d5d5
+	background: #F4F3E5 
+	a
+		display: block
+		padding: 9px 10px 8px 10px 
+		
+.info-block
+	margin-top: 10px  
+	width: 100%
+	height: 240px
+	display: inline-block
+	background: #FFF
+	ul
+		li
+			margin: 0 20px 7px 10px
+			display: inline-block
+	.blocks-title
+		margin-left: -10px
+			
+.classifieds__block
+	position: relative
+	img
+		width: 164px
+		height: 112px
+	span
+		padding: 8px 0 8px 10px
+		color: #FFF 
+		opacity: 1 
+		font: normal 12px Tahoma, Geneva, sans-serif 
+	.classifieds__description
+		position: absolute
+		width: 154px
+		left: 0
+		bottom: 3px
+		background: #000
+		opacity: 0.8  
+		
+		

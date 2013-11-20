@@ -13,7 +13,7 @@
 <!-- BEGIN  out-->
 <div class="out">
 	<!-- BEGIN  header-->
-<header>
+<header class="header">
 	<div class="logo">
 		<a href="#"><i></i></a>
 		<span>Понедельник, 26 октября 2009 года</span>
@@ -42,89 +42,565 @@
 	
 	<div class="menu">
 		<ul class="menu__layout">
-			<li class="menu__item"><a href="">Главная</a></li>
-			<li class="menu__item"><a href="">Политика и економика</a></li>
-			<li class="menu__item"><a href="">Финанси</a></li>
-			<li class="menu__item"><a href="">Компании и рынки</a></li>
-			<li class="menu__item"><a href="">Практика</a></li>
-			<li class="menu__item"><a href="">Инвестиции</a></li>
-			<li class="menu__item"><a href="">Блоги</a></li>
-			<li class="menu__item"><a href="">Форум</a></li>
-			<li class="menu__item"><a href="">Sixtonine</a></li>
-			<li class="menu__item"><a class="menu__item_right" href="">Мир в 2010</a></li>
-		</ul>
-	</div>
-	<div class="menu-next">
-		<ul>
-			<li><a href="">Индустрия</a></li>
-			<li><a href="">Кредитная история</a></li>
-			<li><a href="">Сегмент</a></li>
-			<li><a href="">M&amp;A</a></li>
+			<li class="menu__item"><a class="menu__item_a" href="">Главная</a></li>
+			<li class="menu__item"><a class="menu__item_a" href="">Политика и економика</a></li>
+			<li class="menu__item"><a class="menu__item_a" href="">Финанси</a></li>
+			<li class="menu__item"><a class="menu__item_a" href="">Компании и рынки</a>
+				<ul class="menu-next">
+					<li><a class="menu-next__link" href="">Индустрия</a></li>
+					<li><a class="menu-next__link" href="">Кредитная история</a></li>
+					<li><a class="menu-next__link" href="">Сегмент</a></li>
+					<li><a class="menu-next__link" href="">M&amp;A</a></li>
+				</ul>
+			</li>
+			<li class="menu__item"><a class="menu__item_a" href="">Практика</a></li>
+			<li class="menu__item"><a class="menu__item_a" href="">Инвестиции</a></li>
+			<li class="menu__item"><a class="menu__item_a" href="">Блоги</a></li>
+			<li class="menu__item"><a class="menu__item_a" href="">Форум</a></li>
+			<li class="menu__item"><a class="menu__item_a" href="">Sixtonine</a></li>
+			<li class="menu__item_right"><a class="menu__item_a" href="">Мир в 2010</a></li>
 		</ul>
 	</div>
 </header>
-<div class="page">
-	<div class="content">
-		<div class="tablets">
-			<strong class="">Название</strong>
-			<span>Озельтамивир</span>
-			<strong>Торгова марка</strong>
-			<span>Тамифлю(Tamiflu)</span>
-			<strong>Производитель</strong>
-			<a href="#">Roche</a>
-			<strong>Эффективность</strong>
-			<span>Иногда помагает</span>
-			<strong>Негативные подслствия</strong>
-			<span>тошнота,  рвота, психичечкие отклонения, вялость, боль в горле</span>
-		</div>
-		<div class="tablets">
-			<strong>Название</strong>
-			<span>Парацетамол</span>
-			<strong>Торгова марка</strong>
-			<span>Панадол (Panadol)</span>
-			<strong>Производитель</strong>
-			<a href="#">GlaxoSmithKline</a>
-			<strong>Эффективность</strong>
-			<span>усмиряет симптомы</span>
-			<strong>Негативные подслствия</strong>
-			<span>тошнота, почечная недостаточность</span>
-		</div>
-	</div>
-	<div class="leftbar">
-		<div class="banner"></div>
-		<div class="related-articles">
-			<h3>Статьи по теме</h3>
-			<ul>
-				<li><a href="#">To flu or to flu</a><span>Э. Майстра, 26.11.2009</span></li>
-				<li><a href="#">Украина во власти истерики</a><span>Э. Майстра, 26.11.2009</span></li>
-			</ul>
-		</div>
-		<div class="materials">
-			<ul class="nav-tabs" id="myTab">
-				<li class="active"><a href="#home">Читаемые</a></li>
-				<li><a href="#profile">Комментируемые</a></li>
-				<li><a href="#messages">Цитируемые</a></li>
-			</ul>
-			<div class="tab-content">
-			<div class="tab-pane active" id="home">
-				<ul>
-					<li><a href="#">Основные мндексы Европы неприменно пойдут вниз</a>Д. Пархомчук 26.11.2009</li>
-					<li><a href="#">Точки на чвечах ставятся м сверху, и снизу</a>М. Арсенова 26.11.2009</li>
-					<li><a href="#">Курс доллара и реальность</a>Д.Рябкова 26.11.2009</li>
-					<li><a href="#">Акции Майкрософта выросли с выходом Windows</a>Ю. Гейдюнас 26.11.2009</li>
-					<li><a href="#">Пятая новость о Ральфе Лоренте</a>Д. Пархомчук 26.11.2009</li>
-				</ul>
-			</div>
-			<div class="tab-pane" id="profile">...</div>
-			<div class="tab-pane" id="messages">...</div>
-			</div>
-		</div>
-		<div class="article"></div>
-		<div class="news"></div>
-	</div>
-</div>
+<!-- BEGIN layout -->
+<div class="wrapper">
+	<!-- BEGIN l -->
+	<div class="layout">
+		<!-- BEGIN l-col1 -->
+		<div class="layout__col_left">
+			<!-- BEGIN col_left__wrapper -->
+			<div class="col_left__wrapper">
+				<!-- BEGIN article -->
+				<div class="article">
+					<h1 class="article__title">Чистой воды свинство</h1>
+					<h2 class="article__summary-info">Информация об эпидемии гриппа посеяла самую масштабную панику со времен аварии на Чернобыльской АЭС. И заодно позволила многим заработать на массовой истерии, подогреваемой правительством.</h2>
+					<div class="article__pubinfo">
+						<div class="article__pubinfo_authorpic">
+							<a href="#"><img src="img/pubinfo-pic.png"></a>
+						</div>
+						<div class="article__pubinfo_author">
+							<p><a href="#">Ирина Чернявская</a> редактор рубрики «Компании и рынки», обладательница премий</p>
+							<p>«Инвест-газета» №43,<time class="pubinfo__date" datetime="26 октября 2009, 15:32"> 26 октября 2009, 15:32</a></time> 
+						</div>
+					</div>
+					<div class="article__text">
+						<div class="tablets">
+							<div class="tablets__name">
+								<img src="img/oseltamivir.png" >
+									<table>
+										<tbody>
+											<tr>
+												<th class="tablets__name-border">Название</th>
+												<td class="tablets__name-border">Озельтамивир</td>
+											</tr>
+											<tr>
+												<th>Торговая марка</th>
+												<td>Тамифлю (Tamiflu)</td>
+											</tr>
+											<tr>
+												<th>Производитель</th>
+												<td><a href="#">Roche</a></td>
+											</tr>
+											<tr>
+												<th>Эффективность</th>
+												<td>иногда помогает</td>
+											</tr>
+											<tr>
+												<th>Негативные последствия</th>
+												<td>тошнота, рвота, психические отклонения, вялость, боль в горле</td>
+											</tr>
+										</tbody>
+									</table>
+							</div>
+							<div class="tablets__name">
+								<img src="img/paracetamol.png">
+									<table>
+										<tbody>
+											<tr>
+												<th class="tablets__name-border">Название</th>
+												<td class="tablets__name-border">Парацетамол</td>
+											</tr>
+											<tr>
+												<th>Торговая марка</th>
+												<td>Панадол (Panadol)</td>
+											</tr>
+											<tr>
+												<th>Производитель</th>
+												<td><a href="#">GlaxoSmithKline</a></td>
+											</tr>
+											<tr>
+												<th>Эффективность</th>
+												<td>усмиряет симптомы</td>
+											</tr>
+											<tr>
+												<th>Негативные последствия</th>
+												<td>тошнота, почечная недостаточность</td>
+											</tr>
+										</tbody>
+									</table>
+							</div>
+						</div>
 
-<footer></footer>
+						<p>Инвестиции на сумму $8,9 млрд. в исследования и разработки в прошлом году принесли швейцарской фармацевтической корпорации <a href="#">Roche</a> беспрецедентные дивиденды в 2009-м. Львиная доля успеха заключается в препарате «Тамифлю», продажи которого за девять месяцев достигли $1,9 млрд.</p>
+
+						<p>Заработать миллиарды на чудо-таблетках и микстурах в этом году смогут не только Roche и другие фармацевтические компании с мировым именем, выпускающие противовирусные препараты, но и украинские фармацевты. Ажиотаж вокруг эпидемии «свиного» гриппа, который искусственно создают политики, принесет в их карманы как минимум четверть годового оборота. Не останутся в стороне и аптечные сети. С их полок в первые дни массовой истерии сметали все, что можно применить в профилактике и лечении простудных заболеваний. За день кассы многих аптек пополнялись суммами, равными выторгу за прошлый зимний сезон. Не останутся в стороне и политики, которые заработают не только дополнительные баллы в предвыборной гонке, но и направят бюджеты, выделенные на борьбу с эпидемией, в нужные им русла.</p>
+
+						<h3>Горе от ума</h3>
+						<p>Прошедшая неделя надолго запомнится жителям Украины. Неконтролируемая паника, которой поддалось большинство населения страны, в который раз продемонстрировала, как легко вывести многомиллионную аудиторию из равновесия и заставить потратить последние деньги на лекарства, которые могут и не пригодиться. Для успокоения уже неконтролируемого народа власти разработали несколько мер, которые порой не просто удивляют, но и наводят на мысль о безумии.</p>
+
+						<p>1 млрд. грн. — столько правительство Украины намерено потратить на борьбу с эпидемией гриппа. Причем на эти же цели уже направлено 0,55 млрд. грн. Общая сумма составляет около 25% от прошлогоднего объема продаж на украинском рынке лекарственных средств и в 10 раз меньше суммы, которую выделял Конгресс США на борьбу с пандемией. Выделить финансирование обязали Нацбанк Украины. Но там сразу предупредили, что таких денег нет. Как нет денег и на финансирование Евро-2012, на подготовку к которому банк должен направить 9,8 млрд. грн. Согласно прогнозу НБУ, его прибыль к концу года составит около 600 млн. грн. Так что где правительство намерено взять 1 млрд. грн. — пока вопрос открытый.</p>
+
+						<p>В свою очередь у НБУ появилось «оригинальное» предложение к отечественным банкам, которые сами испытывают дефицит денежных ресурсов: выдавать украинским фармкомпаниям кредиты, чтобы они смогли нарастить объемы выпуска лекарств. При этом центробанк пообещал рефинансировать такие займы. Но если банкиры и готовы предложить фармацевтам кредиты, то производители лекарств не намерены выстраиваться за ними в очередь. Мало кто из них в силах сегодня осилить выполнение условий, предлагаемых банками (ставки выше 20%). Да и многим хватает собственных оборотных средств для развития, так как бизнес довольно рентабельный.</p>
+
+						<p>Еще одной инициативой отличилась Юлия Тимошенко, которая задумала создать государственную аптечную сеть. По ее замыслам, такие аптеки должны открыться во всех государственных больницах и продавать самые необходимые лекарственные препараты. На развитие подобной сети, опять же, понадобятся немалые денежные средства, которых в бюджете нет. А заявления премьер-министра о том, что «на сегодняшний день вакцинации альтернативы нет», при учете того, что в Украине вакцины против гриппа не производят, наводят на мысль, что вода льется на мельницу мировых гигантов фармацевтики, которые являются ключевыми производителями вакцин против гриппа.</p>
+
+						<h3>Взять объемом</h3>
+						<p> Впрочем, украинские фармацевты не только менее болезненно переживают финансовый кризис, но и получают неплохие дивиденды. Во-первых, сокращение поставок импортных препаратов, которые занимали львиную долю отечественного рынка, позволило им укрепить свои позиции за счет производства генериков. Во-вторых, лекарства пользуются стабильным спросом даже в условиях финансового кризиса. За год их стоимость поднялась на 35%. Однако и производителям, и аптечным сетям удалось сохранить привычную для себя рентабельность, которая для первых составляет 38%, а для вторых — 27%.</p>
+
+						<section class="article__addition">
+							<div class="addition__advertising">
+								<a href="#"><img src="img/swedbank.png"></a>
+								<a href="#">Реклама</a>
+							</div>
+							<div class="addition__related-articles">
+								<h2 class="blocks-title">Материалы по теме</h2>
+								<div class="related-articles__item">
+									<a href="#">Основные индексы Европы непременно пойдут вниз</a>
+									<time>Д. Пархомчук 26.11.2009</time>
+								</div>
+								<div class="related-articles__item">
+									<a href="#">Торчки на свечах ставятся и сверху, и снизу</a>
+									<time>М. Арсенова 26.11.2009</time>
+								</div>
+								<div class="related-articles__item">
+								<a href="#">Курс доллара и реальность</a>
+									<time>Д. Рябкова 26.11.2009</time>
+								</div>
+								<div class="related-articles__item">
+									<a href="#">Акции Майкрософта выросли с выходом Windows</a>
+									<time>Ю. Гейдюнас 26.11.2009</time>
+								</div>
+								<div class="related-articles__item">
+									<a href="#">Пятая новость о Ральфе Лорене</a>
+									<time>Д. Пархомчук 26.11.2009</time>
+								</div>
+							</div>
+						</section>
+
+						<p>В первую очередь это касается компании «Фармак» — производителя амизона, второго в списке лидеров по объемам продаж после швейцарского тамифлю. Филя Жебровская, гендиректор «Фармака», говорит, что предприятие перевыполнило месячный план продажи препарата на 11%. Разговоров о прибыли компании, которая увеличится благодаря повышенному спросу, в «Фармаке» избегают. Считается, что противовирусные препараты не относятся к высокодоходной группе лекарств. Но в данном случае компания Фили Жебровской компенсирует относительно скромную цену (около 11 грн.) небывалыми объемами реализации.</p>
+
+						<p>«ИнтерХим» не входит в список лидеров украинского рынка медпрепаратов, но в нынешней ситуации у него есть хорошая возможность это исправить. Компания производит «Амиксин IC», который относится к той же фармакологической группе, что и амизон. Это средство используется для профилактики и лечения гриппа и респираторных вирусных инфекций. «За последние несколько дней мы обеспечили отгрузку этого препарата в объеме двух-трехмесячной нормы», — рассказала заместитель генерального директора по маркетингу компании «ИнтерХим» Ирина Гранатюк. По ее словам, производственная программа предприятия и сырьевые ресурсы были спланированы с учетом прогнозируемой сезонной потребности в противовирусных средствах. Однако сейчас завод перешел на экстренный режим: работает в три смены семь дней в неделю. Здесь также намерены «брать» рынок объемом, без повышения стоимости. </p>
+					</div>
+
+
+					<div class="article__tools">
+						<div class="tools__share">
+							<ul>
+								<li>
+									<a href="#" class="tools__share_blog">В блог</a>
+									<a class="tools__share_facebook" href="#"></a>
+									<a class="tools__share_twitter" href="#"></a>
+								</li>
+								<li><a href="#">Отправить по почтe</a></li>
+								<li><a href="#">Версия для печати</a></li>
+							</ul>
+						</div>
+						<div class="tools__pages">
+							<span class="pages__title">Страница</span>
+							<div class="pages__controls">
+								<a href="#" class="controls__prev controls__prev_current"></a>
+								<span class="pages__number">1 из 12</span>
+								<a href="#" class="controls__next"></a>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="article__tags">
+						<span class="tags__title">Тэги:</span>
+						<ul>
+							<li><a href="#">свиной грипп</a></li>
+							<li><a href="#">тамифлю</a></li>
+							<li><a href="#">эпидемия</a></li>
+							<li><a href="#">Украина</a></li>
+							<li><a href="#">спецтема</a></li>
+						</ul>
+					</div>
+
+
+					<div class="article__comments">
+						<h2 class="article__comments_blocks-title">25 комментариев</h2>
+
+						<div class="comments__users">
+							<div class="comment__author">
+								<a href="#"><img src="img/cat.png"></a>
+								<div class="comment__author-meta">
+									<a href="#">Майдана Кыцька</a>
+									<time class="pubinfo__date comment__date" datetime="12 ноября 2009, 13:58">12 ноября 2009, 13:58</time>
+								</div>
+							</div>
+							<div class="users__text">
+								Люди! Не ведіться на ту пропаганду. Я от захворіла, але не переймалась — мало мізків, та ще й дев’ять життів. Була інфлюєнца і я здорова. А всі знають, що то все для того, щоб про вибори щось там перенести — я в цьому не дуже розумію, бо я ж кицька =^_^=
+							</div>
+						</div>
+
+						<div class="comments__users">
+							<div class="comment__author">
+								<a href="#"><img src="img/wings.png"></a>
+								<div class="comment__author-meta">
+									<a href="#">Люций Фэр</a>
+									<time class="pubinfo__date comment__date" datetime="12 ноября 2009, 12:05">12 ноября 2009, 12:05</time>
+								</div>
+							</div>
+							<div class="users__text">
+								Пусть только попробуют из-за этих эпидемий пернесети концерт Pet Shop Boys. Мы купили билеты и ждем шоу. Перенесут — не пойду на выборы или проголосую за Витренко!
+							</div>
+						</div>
+
+						<div class="comments__users">
+							<div class="comment__author">
+								<a href="#"><img src="img/doctor.png"></a>
+								<div class="comment__author-meta">
+									<a href="#">Супер-терапевт</a>
+									<time class="pubinfo__date comment__date" datetime="10 ноября 2009, 1:27">10 ноября 2009, 1:27</time>
+								</div>
+							</div>
+							<div class="users__text">
+								Заходите на мой сайт и читайте авторитетное мнение терапевта о свином гриппе, использовании антибиотиков, качайте warex, самые крутые фильмы, раскрутка в сети. Адрес: %SITE_URL%. Жду вас всех у себя в гостях! С ув. д-р. К.
+							</div>
+						</div>
+
+						<div class="comments__users">
+							<div class="comment__author">
+								<a href=""><img src="img/q-pic.png"></a>
+								<div class="comment__author-meta">
+									<a href="#">Постоянная Q</a>
+									<time class="pubinfo__date comment__date" datetime="5 ноября 2009, 00:01">5 ноября 2009, 00:01</time>
+								</div>
+							</div>
+							<div class="users__text">
+								Я очень-очень-очень боюсь гриппа. Он противный и голова болит. Не болейте, друзья!
+							</div>
+						</div>
+
+						<div class="comments__users-view">
+							<a href="#"><i></i>Просмотреть все комментарии или добавить свой</a>
+						</div>
+					</div>
+
+				</div>
+				<!-- END article -->
+				<div class="companies-dossier">
+						<a href="#"><h2 class="blocks-title">Досье компаний<i></i></h2></a>
+				</div>
+
+				<div class="day-topics">
+					<h2 class="blocks-title">Темы дня</h2>
+					<ul class="day-topics__list">
+						<li>
+							<a href="#"><i></i>Человек недели: Вацлав Клаус</a>
+							<time class="pubinfo__date comment__date" datetime="25 октября 2009, 2:20">25 октября 2009, 2:20</time>
+							<a href="#" class="comment__link">123<i></i></a>
+						</li>
+						<li>
+							<a href="#"><i></i>Нескромные арабские перспективы</a>
+							<time class="pubinfo__date comment__date" datetime="24 октября 2009, 10:39">24 октября 2009, 10:39</time>
+							<a href="#" class="comment__link">15<i></i></a>
+						</li>
+						<li>
+							<a class="day-topics__private" href="#"><i></i>Волшебники фондового рынка</a>
+							<time class="pubinfo__date comment__date" datetime="22 октября 2009, 23:02">22 октября 2009, 23:02</time>
+							<a href="#" class="comment__link">67<i></i></a>
+						</li>
+						<li>
+							<a href="#"><i></i>Закон ВТО-равновесия</a>
+							<time class="pubinfo__date comment__date" datetime="21 октября 2009, 10:39">21 октября 2009, 10:39</time>
+							<a href="#" class="comment__link">15<i></i></a>
+						</li>
+						<li>
+							<a href="#"><i></i>Evo-эконом</a>
+							<time class="pubinfo__date comment__date" datetime="21 октября 2009, 23:02">21 октября 2009, 23:02</time>
+							<a href="#" class="comment__link">67<i></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- END col_left__wrapper -->
+		</div>
+		<!-- END l-col1 -->
+		<!-- BEGIN l-col2 -->
+		<div class="layout__col_right">
+			<div class="layout__col_right__interest">
+				<a href="#"><img src="img/interest-pic.png" alt=""></a>
+				<a href="#">Релама</a>
+			</div>
+			<!--theme-topics-->
+			<div class="theme-topics">
+				<h2 class="blocks-title">Статьи по теме</h2>
+				<div class="navi-btn">
+					<a href="#" class="navi-btn__controls__end"></a>
+					<a href="#" class="navi-btn__controls__next"></a>
+				</div>
+				<div class="right__senting">
+					<a href="#"><img src="img/section__1.png" alt="" ></img></a>
+					<div class="right__senting_links"><a href="#">To flu or not to  flu</a><br>
+						<time class="pubinfo__date right__senting__date" datetime="26.11.2009">Э. Майста, 26.11.2009</time><br>
+						<a href="#" class="comment__link"><i></i>10</a>
+					</div>
+					
+				</div>
+				<div class="right__senting">
+					<a href="#"><img src="img/section__2.png" alt="" ></img></a>
+					<div class="right__senting_links">
+						<a href="#">Украина во власти истерики</a><br>
+						<time class="pubinfo__date right__senting__date" datetime="26.11.2009">Э. Майста, 26.11.2009</time><br>
+						<a href="#" class="comment__link"><i></i>10</a>
+					</div>
+				</div>
+				<div class="right__senting__view_red">
+					<a href="#"><i></i>Спец-тема «Свиной грипп.ua»</a>
+				</div>
+			</div>
+			<!--theme-topics end-->
+			<!--popular-materials-->
+			<div class="popular-materials">
+				<h2 class="blocks-title">Популярные материалы</h2>
+				<div class="popular-materials__menu">
+					<ul>
+						<li class="active"><a href="">Читаемые</a></li>
+						<li class=""><a href="#">Комментируемые</a></li>
+						<li class=""><a href="#">Цитируемые</a></li>
+					</ul>
+				</div>
+				<div class="popular-materials__link_top">
+					<a href="#">Основные индексы Европы непременно пойдут вниз</a><br>
+					<time class="pubinfo__date popular-materials__date" datetime="26.11.2009">Д. Пархомчук 26.11.2009</time>
+				</div>
+				<div class="popular-materials__link">
+					<a href="#">Торчки на свечах ставятся и сверху, и снизу</a><br>
+					<time class="pubinfo__date popular-materials__date" datetime="26.11.2009">М. Арсенова 26.11.2009</time>
+				</div>
+				<div class="popular-materials__link">
+					<a href="#">Курс доллара и реальность</a><br>
+					<time class="pubinfo__date popular-materials__date" datetime="26.11.2009">Д. Рябкова 26.11.2009</time>
+				</div>
+				<div class="popular-materials__link">
+					<a href="#">Акции Майкрософта выросли с выходом Windows</a><br>
+					<time class="pubinfo__date popular-materials__date" datetime="26.11.2009">Ю. Гейдюнас 26.11.2009</time>
+				</div>
+				<div class="popular-materials__link">
+					<a href="#">Пятая новость о Ральфе Лорене</a><br>
+					<time class="pubinfo__date popular-materials__date" datetime="26.11.2009">Д. Пархомчук 26.11.2009</time>
+				</div>
+			</div>
+			<!--popular-materials end-->
+			<!--popular-materials-->
+			<div class="popular-materials">
+				<h2 class="blocks-title">Статьи раздела</h2>
+					<div class="right__senting">
+						<a href="#"><img src="img/section__3.png" alt="" ></img></a>
+						<div class="right__senting_links">
+							<a href="#">Водная концентрация</a><br>
+							<time class="pubinfo__date right__senting__date" datetime="26.11.2009">Д. Исакова, 26.11.2009</time><br>
+							<a href="#" class="comment__link"><i></i>10</a>
+						</div>
+					</div>
+					<div class="right__senting">
+						<a href="#"><img src="img/section__4.png" alt="" ></img></a>
+						<div class="right__senting_links">
+							<a href="#">Кокс заморский</a><br>
+							<time class="pubinfo__date right__senting__date" datetime="26.11.2009">И. Гошовский, 26.11.2009</time><br>
+							<a href="#" class="comment__link"><i></i>10</a>
+						</div>
+					</div>
+					<div class="right__senting">
+						<a href="#"><img src="img/section__5.png" alt="" ></img></a>
+						<div class="right__senting_links">
+							<a href="#">Распродажа по требованию</a><br>
+							<time class="pubinfo__date right__senting__date" datetime="26.11.2009">Д. Исакова, 26.11.2009</time><br>
+							<a href="#" class="comment__link"><i></i>10</a>
+						</div>
+					</div>
+					<div class="right__senting">
+						<a href="#"><img src="img/section__6.png" alt="" ></img></a>
+						<div class="right__senting_links">
+							<a href="#">Волшебники фондового рынка</a><br>
+							<time class="pubinfo__date right__senting__date" datetime="26.11.2009">Д. Исакова, 26.11.2009</time><br>
+							<a href="#" class="comment__link"><i></i>10</a>
+						</div>
+					</div>
+				<div class="right__senting__view_white">
+					<a href="#"><i></i>Все материалы раздела «Компании и рынки»</a>
+				</div>
+			</div>
+			<!--popular-materials end-->
+			<!--delo-ua-->
+			<div class="delo-ua">
+				<h2 class="blocks-title">Новости Delo.ua</h2>
+				<div class="right__senting">
+					<a href="#">Продажи «Тамифлю» принесли производителю почти миллиард долларов</a>
+				</div>
+				<div class="right__senting">
+					<a href="#">Продажи «Тамифлю» принесли производителю почти миллиард долларов</a>
+				</div>
+				<div class="right__senting">
+					<a href="#">Ситуация раскручивается, чтобы доказать недееспособность правительства</a>
+				</div>
+
+				<div class="right__senting">
+					<a href="#">Каждому украинцу — по тюбику с мазью</a>
+				</div>
+				<div class="right__senting">
+					<a href="#">В России аптекари дружно повысили цены на лекарства</a>
+				</div>
+
+				<div class="right__senting">
+					<a href="#">АМКУ: Хмельницкий завод продавал марлевые повязки дороже 3 гривен</a>
+				</div>
+
+				<div class="right__senting">
+					<a href="#">Аналог «Тамифлю» начали производить в Харькове</a>
+				</div>
+			</div>
+			<!--delo-ua end-->
+		</div>
+		<!-- END l-col2 -->
+	</div>
+	<!-- END l -->
+	<!-- BEGIN layout__bottom-menu -->
+	<div class="info-block">
+		<nav>
+			<ul>
+				<li>
+					<h2 class="blocks-title">Образование</h2>
+					<a class="classifieds__block" href="#">
+						<img src="img/education.png">
+						<span class="classifieds__description">Получить MBA быстро и недорого.</span>
+					</a>
+				</li>
+				<li>
+					<h2 class="blocks-title">Бизнес</h2>
+					<a class="classifieds__block" href="#">
+						<img src="img/business.png">
+						<span class="classifieds__description">Ликвидация юридических лиц. Надежно!</span>
+					</a>
+				</li>
+				<li>
+					<h2 class="blocks-title">Финансы</h2>
+					<a class="classifieds__block" href="#">
+						<img src="img/finance.png">
+						<span class="classifieds__description">NASDAQ, Forex, Broco — профессиональные мастерклассы</span>
+					</a>
+				</li>
+				<li>
+					<h2 class="blocks-title">Банки</h2>
+					<a class="classifieds__block" href="#">
+						<img src="img/banks.png">
+						<span class="classifieds__description">Партнер издания</span>
+					</a>
+				</li>
+				<li>
+					<h2 class="blocks-title">Досуг</h2>
+					<a class="classifieds__block" href="#">
+						<img src="img/leisure.png">
+						<span class="classifieds__description">Race of Champions 2009 в Пекине</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+			<div class="main__nav">
+		<nav>
+			<a href="#">Главная</a>
+			<a href="#">Политика и экономика</a>
+			<a href="#">Финансы</a>
+			<a href="#">Компании и рынки</a>
+			<a href="#">Практика</a>
+			<a href="#">Инвестиции</a>
+			<a href="#">Блоги</a>
+			<a href="#">Форум</a>
+			<a href="#">Sixtonine</a>
+			<a href="#">Мир в 2010 году</a>
+		</nav>
+	</div>
+	</div>
+
+	<!-- END layout__bottom-menu -->
+</div>
+<!-- END layout -->
+
+</div>
+<!-- END l-wrapper -->
+
+<!-- BEGIN footer -->
+<footer class="footer">
+	<!-- BEGIN footer__wrapper -->
+	<div class="footer__wrapper">
+		<!-- BEGIN footer__holder -->
+		<div class="footer__holder">
+			<!-- BEGIN footer__main -->
+			<div class="footer__main">
+
+				<!-- BEGIN footer__info -->
+				<div class="footer__info">
+					<h3>Инвестгазета</h3>
+					<p>
+					Подписной индекс: 33782<br>
+					Выходит каждый понедельник<br>
+					Свидетельство о регистрации № КВ10263<br>
+					от 09.08.2005г.
+					</p>
+					<p>Учредитель: ООО «Издательство „Экономика“»</p>
+				</div>
+				<!-- END footer__info -->
+
+				<!-- BEGIN footer__address -->
+				<div class="footer__address">
+					<p><span>Адрес редакции-издателя</span><br>
+					01061, г. Киев-61, ул. Владимирская, 49-а, 3 этаж<br>
+					Телефон/факс: (044) 585-58-91/92<br>
+					<a href="mailto:uig@investgazeta.net">uig@investgazeta.net</a></p>
+					<p><span>При перепечатке и использовании материалов<br>
+					«Инвестгазеты» ссылка на нее —</span> обязательна!</p>
+				</div>
+				<!-- END footer__address -->
+
+				<!-- BEGIN footer__departments -->
+				<div class="footer__departments">
+					<p>Главный редактор<br><a href="#">Вовк С.А.</a></p>
+					<p>Директор по рекламе<br><a href="#">Сердюк И.С.</a></p>
+					<p>Отдел подписки онлайн<br><a href="#">Осипенко М.В.</a></p>
+				</div>
+				<!-- END footer__departments -->
+			</div>
+			<!-- END footer__main -->
+
+			<!-- BEGIN footer__about -->
+			<div class="footer__about">
+				<strong class="footer__publishers">
+					<a title="Перейти на сайт издательства «Экономика»" href="#">Издательство «Экономика»</a>
+				</strong>
+				<div class="footer__copy">
+					<span>© 1995-2009 Издательство «Экономика»</span>
+					<nav class="footer__nav">
+						<ul>
+							<li><a href="#">Дело</a></li>
+							<li><a href="#">ММР</a></li>
+							<li><a href="#">ТОП–100</a></li>
+						</ul>
+					</nav>
+				</div>
+				<strong class="footer__developed-by">
+					Дизайн сайта<br>
+					<a href="#" title="Сайт разработан компанией GENN">GENN.org</a>
+				</strong>
+			</div>
+			<!-- END footer__about -->
+		</div>
+		<!-- END footer__holder -->
+	</div>
+	<!-- END footer__wrapper -->
+</footer>
+<!-- END footer -->
 </div>
 <!-- END out-->
 
