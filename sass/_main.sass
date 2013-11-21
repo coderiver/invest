@@ -1,11 +1,23 @@
 // Normally mainpage styles
+@font-face
+	font-family: 'HeliosCond'
+	src: url('../fonts/HeliosCond.eot')
+	src: local('☺'), url('../fonts/HeliosCond.woff') format('woff'), url('../fonts/HeliosCond.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+=helios
+	font-family: 'HeliosCond', Arial, sans-serif
+
 html
 	overflow: scroll
 	
 body
 	position: relative
 	background: #e8e9e9
-	background: linear-gradient(#e8e9e9, #fff, #e8e9e9)
+	background: linear-gradient(#E5E5E5 , #fff, #E5E5E5)
+	font: normal 12px Tahoma, 'Geneva', sans-serif 
+        
 	&:before
 		content: ""
 		position: absolute
@@ -14,11 +26,20 @@ body
 		right: 0
 		height: 42px
 		background: #B7B7B7 
+	&:after
+		content: ""
+		position: absolute
+		bottom: 14px
+		left: 0
+		right: 0
+		z-index: -1
+		height: 42px
+		background: #B7B7B7 
+		border-top: 126px solid #ccdfe9
 	
 .out
 	margin: 0 auto
-	padding-bottom: 10px
-	width: 970px
+	width: 980px
 	
 .header
 	position: relative
@@ -51,7 +72,7 @@ body
 	margin-left: -106px 
 	padding: 9px 0 10px 28px
 	width: 240px
-	height: 109px
+	height: 126px
 	border-left: 1px solid #FFFFFF
 	border-right: 1px solid #FFFFFF
 	strong
@@ -172,7 +193,6 @@ body
 		padding: 0 7px
 		line-height: 42px
 		color: #fff 
-		font-family: 12px Tahoma, Geneva, sans-serif 
 		text-decoration: none
 		display: block
 		&:before
@@ -189,7 +209,6 @@ body
 			line-height: 42px
 			background: #9b1f17 
 			+g(#9b1f17, #c8281e)
-			font-family: 12px Tahoma, Geneva, sans-serif 
 			text-decoration: none
 			&:before
 				display: none
@@ -203,7 +222,6 @@ body
 		padding: 0 7px
 		line-height: 42px
 		color: #fff 
-		font-family: 12px Tahoma, Geneva, sans-serif 
 		text-decoration: none
 		display: block
 		&:before
@@ -220,7 +238,6 @@ body
 			line-height: 42px
 			background: #9b1f17 
 			+g(#c8281e, #9b1f17)
-			font-family: 12px Tahoma, Geneva, sans-serif 
 			text-decoration: none
 			&:before
 				display: none
@@ -245,7 +262,6 @@ body
 		padding: 0 7px
 		line-height: 38px
 		color: #c8281e
-		font-family: 12px Tahoma, Geneva, sans-serif 
 		text-decoration: none
 		display: block
 		&:before
@@ -253,14 +269,13 @@ body
 			position: absolute
 			top: 6px
 			width: 1px
-			left: 0
+			right: 0
 			height: 32px
 			background: #fff
 
 .wrapper
 	margin-top: 15px
 	width: 1000px
-	overflow: auto
 
 .layout__col_left
 	float: left
@@ -276,20 +291,19 @@ body
 
 .article__title
 	padding-top: 18px
-	font: bold 30px Tahoma, Geneva, sans-serif
+	font-size: 30px
+	font-weight: bold
 	
 .article__summary-info
 	padding-bottom: 23px
-	font: normal 18px Tahoma, Geneva, sans-serif
+	font-size: 18px
 	
 .article__pubinfo
 	margin-bottom: 25px
 	height: 75px
-	font: normal 12px Tahoma, Geneva, sans-serif
 	a
 		color: #c8281e
 		text-decoration: none
-		font: normal 12px Tahoma, Geneva, sans-serif
 	
 .article__pubinfo_author
 	margin-left: 11px 
@@ -297,8 +311,7 @@ body
 	overflow: hidden
 	p
 		padding-top: 8px
-		font: normal 12px Tahoma, Geneva, sans-serif
-	
+
 .article__pubinfo_authorpic
 	float: left
 	padding: 0 10px 25px 0
@@ -326,11 +339,12 @@ body
 			text-align: left
 			border-top: 1px solid  #d5d5d5
 			padding: 6px 0 6px 0
-			font: bold 11px Tahoma, Geneva, sans-serif
+			font-size: 11px
+			font-weight: bold
 		td
 			border-top: 1px solid  #d5d5d5
 			padding: 6px 0 6px 0
-			font: normal 11px Tahoma, Geneva, sans-serif
+			font-size: 11px
 			a
 				color: #3fa7e9
 				border-bottom: 1px solid  #3fa7e9
@@ -342,13 +356,14 @@ body
 .article__text
 	p
 		padding-bottom: 25px
-		font: normal 13px Tahoma, Geneva, sans-serif
+		font-size: 13px
 		a
 			color: #3fa7e9
 			border-bottom: 1px solid  #3fa7e9
 	h3
 		padding-right: 7px
-		font: bold 18px Tahoma, Geneva, sans-serif
+		font-size: 18px
+		font-weight: bold
 		color: #C8281E 
 		display: inline
 	h3+p
@@ -381,8 +396,9 @@ body
 	width: 301px
 	
 .blocks-title
-	font: bold 18px Tahoma, Geneva, sans-serif
 	padding: 10px
+	font-size: 18px
+	font-weight: bold 
 	
 .related-articles__item
 	padding: 5px 10px 5px 10px
@@ -390,13 +406,12 @@ body
 	a
 		
 		display: block
-		font: normal 12px Tahoma, Geneva, sans-serif
 		text-decoration: none
 		color: #3fa7e9
 		&:hover
 			text-decoration: underline
 	time
-		font: normal 11px Tahoma, Geneva, sans-serif
+		font-size: 11px
 		color: #A9A9A9 
 		
 .article__tools
@@ -410,10 +425,10 @@ body
 	ul
 		list-style: none
 		li
-			float: left
-			display: inline-block
 			position: relative
+			float: left
 			height: 38px
+			display: inline-block
 			&:before
 				content: ""
 				position: absolute
@@ -425,7 +440,7 @@ body
 		a
 			float: left
 			margin: 12px 15px 0 15px 
-			font: normal 11px Tahoma, Geneva, sans-serif 
+			font-size: 11px
 			color: #a8a8a8
 			display: block
 			&:hover
@@ -478,7 +493,6 @@ body
 .article__tags
 	padding: 17px 0 18px 0
 	border-bottom: 5px solid #000
-	font: normal 12px Tahoma, Geneva, sans-serif 
 	ul
 		li
 			display: inline
@@ -498,7 +512,8 @@ body
 	
 .article__comments_blocks-title
 	padding: 0 0 22px 0
-	font: bold 18px Tahoma, Geneva, sans-serif   
+	font-size: 18px
+	font-weight: bold
 
 .comments__users
 	padding-bottom: 25px
@@ -508,7 +523,6 @@ body
 		float: left
 		padding-right: 15px
 		color: #008AE2 
-		font: normal 12px Tahoma, Geneva, sans-serif  
 		text-decoration: none
 		&:hover
 			text-decoration: underline
@@ -532,7 +546,6 @@ body
 	a
 		text-decoration: none
 		color: #C8281E 
-		font: normal 12px Tahoma, Geneva, sans-serif 
 		&:hover
 			text-decoration: underline
 
@@ -543,7 +556,8 @@ body
 	
 .blocks-title
 	padding: 10px 0 10px 10px 
-	font: bold 18px Tahoma, Geneva, sans-serif
+	font-size: 18px 
+	font-weight: bold
 	color: #000 
 	i
 		float: right
@@ -589,7 +603,7 @@ body
 	margin: 10px 40px 20px 40px
 	a
 		color: #999 
-		font: normal 11px Tahoma, Geneva, sans-serif
+		font-size: 11px 
 		&:hover
 			text-decoration: none
   
@@ -617,7 +631,6 @@ body
 	border-top: 1px solid  #d5d5d5
 	a
 		color: #008AE2 
-		font: normal 12px Tahoma, Geneva, sans-serif  
 		text-decoration: none
 		&:hover
 			text-decoration: underline
@@ -641,7 +654,6 @@ body
 		position: absolute
 		top: 8px
 		left: 30px 
-		font: normal 12px Tahoma, Geneva, sans-serif 
 		color: #FFF 
 		text-decoration: none
 		&:hover
@@ -693,7 +705,7 @@ body
 				color: #000
 				text-decoration: none
 				line-height: 27px
-				font: normal 11px Tahoma, Geneva, sans-serif 
+				font-size: 11px 
 				&:hover
 					text-decoration: underline
 		.active
@@ -706,7 +718,6 @@ body
 	margin: 14px 10px 9px 10px
 	a
 		color: #008ae2 
-		font: normal 12px Tahoma, Geneva, sans-serif  
 		text-decoration: none
 		&:hover
 			text-decoration: underline
@@ -716,7 +727,6 @@ body
 	padding: 10px 10px 9px 10px
 	a
 		color: #008ae2 
-		font: normal 12px Tahoma, Geneva, sans-serif  
 		text-decoration: none
 		&:hover
 			text-decoration: underline
@@ -732,12 +742,12 @@ body
 .info-block
 	margin-top: 10px  
 	width: 100%
-	height: 240px
+	height: 229px
 	display: inline-block
 	background: #FFF
 	ul
 		li
-			margin: 0 20px 7px 10px
+			margin: 13px 15px 7px 15px
 			display: inline-block
 	.blocks-title
 		margin-left: -10px
@@ -747,11 +757,13 @@ body
 	img
 		width: 164px
 		height: 112px
+		border: 1px solid #d5d5d5
 	span
 		padding: 8px 0 8px 10px
+		margin-left: 1px
 		color: #FFF 
 		opacity: 1 
-		font: normal 12px Tahoma, Geneva, sans-serif 
+		
 	.classifieds__description
 		position: absolute
 		width: 154px
@@ -760,4 +772,166 @@ body
 		background: #000
 		opacity: 0.8  
 		
-		
+.info-block__main-nav
+	nav
+		height: 51px
+		background: #E5E5E5 
+		a
+			position: relative
+			margin: 0 auto
+			padding: 21px 10px 19px 11px 
+			color: #000 
+			text-decoration: none
+			display: inline-block
+			&:hover
+				text-decoration: underline
+			&:before
+				content: ""
+				position: absolute
+				width: 1px
+				height: 31px
+				bottom: 0
+				left: 0
+				top: 10px
+				background: #B7B7B7 
+			&:after
+				content: ""
+				position: absolute
+				width: 1px
+				height: 31px
+				bottom: 0
+				right: -5px
+				top: 10px
+				background: #B7B7B7 
+
+.footer
+	margin: 0 auto
+	width: 980px
+	height: 193px 
+	
+	
+.footer__wrapper
+	position: relative
+	margin-right: -20px 
+	margin-bottom: 19px 
+	border: 10px solid #fff
+	
+.footer__main
+	width: 100%
+	height: 126px
+	+g(#c1ddeb, #daebf3)
+	display: inline-block
+	
+.footer__info
+	margin: 8px 9px 19px 9px
+	float: left
+	h3
+		font-size: 18px 
+	p
+		font-size: 11px 
+		padding-top: 11px
+	
+.footer__address
+	position: absolute
+	top: 1px
+	left: 50%
+	margin-left: -192px 
+	width: 384px
+	height: 126px
+	border-left: 1px solid #fff
+	border-right: 1px solid #fff 
+	font-size: 11px
+	p
+		padding: 9px 0 0 27px
+		span
+			padding: 2px 
+			color: #378CB7 
+		a
+			padding-bottom: 19px
+			color: #000
+			display: inline-block
+			&:hover
+				text-decoration: none
+	
+.footer__departments
+	float: right
+	margin: 10px 105px 0 0
+	p
+		padding-bottom: 14px
+		font-size: 11px
+		color: #378CB7 
+		a
+			color: #000 
+			&:hover
+				text-decoration: none
+	
+.footer__about
+	height: 42px
+	width: 100%
+	background: #000
+	span
+		margin: 17px 19px 0 0
+		color: #FFF 
+		display: inline-block
+	
+.footer__publishers
+	float: left
+	margin: 8px 19px 7px 8px
+	display: inline
+	color: #FFF 
+	
+.footer__nav
+	display: inline
+	li
+		display: inline
+		a
+			position: relative
+			padding: 14px 10px 0 10px 
+			font-size: 18px 
+			color: #FFF 
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+			&:before
+				content: ""
+				position: absolute
+				width: 1px
+				height: 31px
+				bottom: 0
+				left: 0
+				top: 10px
+				background: #333333
+			&:after
+				content: ""
+				position: absolute
+				width: 1px
+				height: 31px
+				bottom: 0
+				right: -5px
+				top: 10px
+				background: #333333 
+
+
+.footer__developed-by
+	float: right
+	padding: 9px 9px 0 0
+	display: inline
+	span
+		margin: 0 
+		padding-bottom: 2px 
+		color: #999
+		font-size: 11px 
+		display: block
+	a
+		position: relative
+		float: right
+		color: #fff 
+		text-decoration: none
+		+helios
+		font-weight: bold
+		font-size: 12px 
+		i
+			position: absolute
+			top: 0
+			left: -18px
+			+s(genn)
